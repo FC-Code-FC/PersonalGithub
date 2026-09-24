@@ -1,0 +1,267 @@
+{
+  "logreg_A": {
+    "family": "logreg",
+    "config": "A",
+    "best_params": {
+      "clf__C": 3.0
+    },
+    "cv_pr_auc": 0.350650989148228
+  },
+  "logreg_B": {
+    "family": "logreg",
+    "config": "B",
+    "best_params": {
+      "clf__C": 0.1
+    },
+    "cv_pr_auc": 0.3734287244043594
+  },
+  "logreg_C": {
+    "family": "logreg",
+    "config": "C",
+    "best_params": {
+      "clf__C": 0.0003
+    },
+    "cv_pr_auc": 0.3791801250773559
+  },
+  "rf_A": {
+    "family": "rf",
+    "config": "A",
+    "best_params": {
+      "criterion": "entropy",
+      "max_depth": 20,
+      "max_features": 0.5,
+      "min_samples_leaf": 58,
+      "min_samples_split": 8
+    },
+    "cv_pr_auc": 0.3926264134429493
+  },
+  "rf_B": {
+    "family": "rf",
+    "config": "B",
+    "best_params": {
+      "criterion": "entropy",
+      "max_depth": 10,
+      "max_features": 0.5,
+      "min_samples_leaf": 45,
+      "min_samples_split": 19
+    },
+    "cv_pr_auc": 0.39013472383516223
+  },
+  "rf_C": {
+    "family": "rf",
+    "config": "C",
+    "best_params": {
+      "criterion": "entropy",
+      "max_depth": 10,
+      "max_features": 0.3,
+      "min_samples_leaf": 48,
+      "min_samples_split": 12
+    },
+    "cv_pr_auc": 0.393827405773802
+  },
+  "xgb_A": {
+    "family": "xgb",
+    "config": "A",
+    "best_params": {
+      "colsample_bytree": 0.9754642972512741,
+      "gamma": 0.13638265307035222,
+      "learning_rate": 0.02157672072019531,
+      "max_delta_step": 2,
+      "max_depth": 6,
+      "min_child_weight": 18,
+      "n_estimators": 523,
+      "reg_alpha": 1.3615465198278514,
+      "reg_lambda": 9.5128233257491,
+      "subsample": 0.93867780610263
+    },
+    "cv_pr_auc": 0.3955231904805899
+  },
+  "xgb_B": {
+    "family": "xgb",
+    "config": "B",
+    "best_params": {
+      "colsample_bytree": 0.9404353795994642,
+      "gamma": 1.678506616780749,
+      "learning_rate": 0.005636066351045878,
+      "max_delta_step": 7,
+      "max_depth": 7,
+      "min_child_weight": 7,
+      "n_estimators": 1126,
+      "reg_alpha": 0.0010095858586996879,
+      "reg_lambda": 0.6854449646535857,
+      "subsample": 0.8783179018924674
+    },
+    "cv_pr_auc": 0.39389157120358814
+  },
+  "xgb_C": {
+    "family": "xgb",
+    "config": "C",
+    "best_params": {
+      "colsample_bytree": 0.9148815601438225,
+      "gamma": 0.17462964129288888,
+      "learning_rate": 0.01646904865416717,
+      "max_delta_step": 6,
+      "max_depth": 6,
+      "min_child_weight": 8,
+      "n_estimators": 394,
+      "reg_alpha": 0.42341833615453,
+      "reg_lambda": 12.425513389168005,
+      "subsample": 0.8016459028574715
+    },
+    "cv_pr_auc": 0.3971020400163962
+  },
+  "selected": {
+    "logreg": "logreg_C",
+    "rf": "rf_C",
+    "xgb": "xgb_C"
+  },
+  "validation_metrics": [
+    {
+      "pipeline": "logreg_A",
+      "val_pr_auc": 0.350907,
+      "pr_lo": 0.32777,
+      "pr_hi": 0.373871,
+      "val_auroc": 0.820072,
+      "auc_lo": 0.808892,
+      "auc_hi": 0.830353,
+      "cv_pr_auc": 0.350651
+    },
+    {
+      "pipeline": "logreg_B",
+      "val_pr_auc": 0.368989,
+      "pr_lo": 0.347132,
+      "pr_hi": 0.392563,
+      "val_auroc": 0.849594,
+      "auc_lo": 0.840962,
+      "auc_hi": 0.858071,
+      "cv_pr_auc": 0.373429
+    },
+    {
+      "pipeline": "logreg_C",
+      "val_pr_auc": 0.379151,
+      "pr_lo": 0.357593,
+      "pr_hi": 0.402026,
+      "val_auroc": 0.85731,
+      "auc_lo": 0.84837,
+      "auc_hi": 0.865149,
+      "cv_pr_auc": 0.37918
+    },
+    {
+      "pipeline": "rf_A",
+      "val_pr_auc": 0.385676,
+      "pr_lo": 0.364676,
+      "pr_hi": 0.409643,
+      "val_auroc": 0.864133,
+      "auc_lo": 0.855861,
+      "auc_hi": 0.87239,
+      "cv_pr_auc": 0.392626
+    },
+    {
+      "pipeline": "rf_B",
+      "val_pr_auc": 0.384408,
+      "pr_lo": 0.36259,
+      "pr_hi": 0.408738,
+      "val_auroc": 0.862779,
+      "auc_lo": 0.854468,
+      "auc_hi": 0.870549,
+      "cv_pr_auc": 0.390135
+    },
+    {
+      "pipeline": "rf_C",
+      "val_pr_auc": 0.390367,
+      "pr_lo": 0.36779,
+      "pr_hi": 0.415375,
+      "val_auroc": 0.863311,
+      "auc_lo": 0.854858,
+      "auc_hi": 0.87106,
+      "cv_pr_auc": 0.393827
+    },
+    {
+      "pipeline": "xgb_A",
+      "val_pr_auc": 0.388589,
+      "pr_lo": 0.365693,
+      "pr_hi": 0.411948,
+      "val_auroc": 0.863591,
+      "auc_lo": 0.854905,
+      "auc_hi": 0.871844,
+      "cv_pr_auc": 0.395523
+    },
+    {
+      "pipeline": "xgb_B",
+      "val_pr_auc": 0.387528,
+      "pr_lo": 0.364591,
+      "pr_hi": 0.410988,
+      "val_auroc": 0.862382,
+      "auc_lo": 0.853949,
+      "auc_hi": 0.870649,
+      "cv_pr_auc": 0.393892
+    },
+    {
+      "pipeline": "xgb_C",
+      "val_pr_auc": 0.393075,
+      "pr_lo": 0.369848,
+      "pr_hi": 0.417329,
+      "val_auroc": 0.86337,
+      "auc_lo": 0.855069,
+      "auc_hi": 0.871284,
+      "cv_pr_auc": 0.397102
+    }
+  ],
+  "lr_pruned_sensitivity": {
+    "full_features": [
+      "revolving_util_band",
+      "age_lifestage",
+      "debt_ratio_t",
+      "monthly_income_t",
+      "open_credit_lines_and_loans_t",
+      "real_estate_loans_or_lines_t",
+      "dependents_t",
+      "past_due_30_59",
+      "past_due_60_89",
+      "past_due_90",
+      "weighted_delinq_score",
+      "combined_delinq_flag",
+      "delinquency_rate",
+      "util_delinq_interaction",
+      "zero_flag_past_due_90",
+      "zero_flag_past_due_60_89",
+      "zero_flag_past_due_30_59",
+      "mahalanobis_log",
+      "multi_extremity_index",
+      "sentinel_flag",
+      "debt_burden_per_dependent",
+      "zero_flag_open_credit_lines"
+    ],
+    "pruned_features": [
+      "revolving_util_band",
+      "age_lifestage",
+      "debt_ratio_t",
+      "monthly_income_t",
+      "open_credit_lines_and_loans_t",
+      "real_estate_loans_or_lines_t",
+      "dependents_t",
+      "past_due_30_59",
+      "past_due_60_89",
+      "past_due_90",
+      "weighted_delinq_score",
+      "mahalanobis_log",
+      "multi_extremity_index",
+      "sentinel_flag",
+      "debt_burden_per_dependent",
+      "zero_flag_open_credit_lines"
+    ],
+    "removed": [
+      "util_delinq_interaction",
+      "delinquency_rate",
+      "combined_delinq_flag",
+      "zero_flag_past_due_30_59",
+      "zero_flag_past_due_60_89",
+      "zero_flag_past_due_90"
+    ],
+    "full_C": 0.0003,
+    "pruned_C": 3.0,
+    "full_val_pr_auc": 0.379151,
+    "pruned_val_pr_auc": 0.38102417670400157,
+    "delta": 0.0018731767040015557
+  }
+}

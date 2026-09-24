@@ -1,0 +1,16 @@
+dimension,model,group,policy,threshold,n,approval_rate,fnr,fpr,EL
+income_group,xgb_C,low,naive,0.5,8141,0.980961,0.858478,0.006629,0.795848
+income_group,xgb_C,low,f1,0.23,8141,0.885272,0.481976,0.073864,0.510502
+income_group,xgb_C,low,cost_5,0.149,8141,0.827417,0.371162,0.126353,0.285469
+income_group,xgb_C,low,cost_10,0.084,8141,0.700528,0.213618,0.250135,0.423658
+income_group,xgb_C,low,cost_20,0.039,8141,0.549441,0.12016,0.407062,0.590714
+income_group,xgb_C,mid-high,naive,0.5,15869,0.991871,0.904605,0.002808,0.522528
+income_group,xgb_C,mid-high,f1,0.23,15869,0.945428,0.595395,0.033229,0.373495
+income_group,xgb_C,mid-high,cost_5,0.149,15869,0.90535,0.463816,0.067727,0.197114
+income_group,xgb_C,mid-high,cost_10,0.084,15869,0.824123,0.320175,0.145149,0.320814
+income_group,xgb_C,mid-high,cost_20,0.039,15869,0.69286,0.184211,0.276125,0.471989
+income_group,xgb_C,missing,naive,0.5,5869,0.983472,0.818182,0.006331,0.481343
+income_group,xgb_C,missing,f1,0.23,5869,0.920429,0.422287,0.048842,0.291361
+income_group,xgb_C,missing,cost_5,0.149,5869,0.886693,0.322581,0.078509,0.167661
+income_group,xgb_C,missing,cost_10,0.084,5869,0.807122,0.178886,0.154124,0.249105
+income_group,xgb_C,missing,cost_20,0.039,5869,0.690237,0.099707,0.273336,0.373317

@@ -1,0 +1,7 @@
+selection_metric,rank_1,rank_2,rank_3,rank_1_vs_2_ci_overlap
+AUROC (discrimination),RF-C,XGB-C,LR-C,True
+PR-AUC (discrimination),RF-C,LR-C,XGB-C,True
+Reliability (calibration),XGB-C,RF-C,LR-C,True
+Expected loss @ ratio 5,RF-C,LR-C,XGB-C,True
+Expected loss @ ratio 10,RF-C,XGB-C,LR-C,True
+Expected loss @ ratio 20,RF-C,LR-C,XGB-C,True

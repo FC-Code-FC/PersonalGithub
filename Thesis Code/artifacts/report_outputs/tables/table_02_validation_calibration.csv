@@ -1,0 +1,4 @@
+model,model_key,uncalibrated_reliability,selected_calibrator,calibrated_brier,calibrated_reliability
+LR-C,logreg_C,0.096286,beta,0.049934,0.000441
+RF-C,rf_C,0.085472,beta,0.049417,0.00037
+XGB-C,xgb_C,0.094242,isotonic,0.049581,0.000333

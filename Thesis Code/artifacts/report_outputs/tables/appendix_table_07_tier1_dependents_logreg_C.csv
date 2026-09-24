@@ -1,0 +1,11 @@
+dimension,model,group,policy,threshold,n,approval_rate,fnr,fpr,EL
+dependents_group,logreg_C,0,naive,0.5,17958,0.984241,0.831439,0.006212,0.494766
+dependents_group,logreg_C,0,f1,0.19,17958,0.920147,0.493371,0.053189,0.340183
+dependents_group,logreg_C,0,cost_5,0.172,17958,0.914022,0.473485,0.058455,0.194231
+dependents_group,logreg_C,0,cost_10,0.088,17958,0.832776,0.308712,0.134481,0.308108
+dependents_group,logreg_C,0,cost_20,0.055,17958,0.757601,0.204545,0.207845,0.436184
+dependents_group,logreg_C,>=1,naive,0.5,11921,0.978861,0.826638,0.008018,0.663367
+dependents_group,logreg_C,>=1,f1,0.19,11921,0.88407,0.445032,0.078087,0.425048
+dependents_group,logreg_C,>=1,cost_5,0.172,11921,0.872997,0.417548,0.087745,0.246456
+dependents_group,logreg_C,>=1,cost_10,0.088,11921,0.766127,0.262156,0.190433,0.383357
+dependents_group,logreg_C,>=1,cost_20,0.055,11921,0.655062,0.175476,0.303599,0.558007
